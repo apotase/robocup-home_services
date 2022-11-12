@@ -1,0 +1,6 @@
+string name
+---
+string FaceAttribute
+bool state
+int64 errorcode
+string errormsg

@@ -1,0 +1,4 @@
+<launch>
+    <include file='$(find speech_recognition)/launch/speech_recognition.launch'/>
+    <include file='$(find speech_synthesis)/launch/speech_synthesis.launch'/>
+</launch>

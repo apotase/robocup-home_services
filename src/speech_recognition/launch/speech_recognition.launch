@@ -1,0 +1,4 @@
+<launch>
+    <node pkg='speech_recognition' name='speech_recognition' type='speech_recognition.py' output='screen' >
+    </node>
+</launch>

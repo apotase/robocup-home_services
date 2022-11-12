@@ -1,0 +1,5 @@
+bool enable
+---
+bool state
+int64 errorcode
+string errormsg

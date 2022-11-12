@@ -1,0 +1,6 @@
+bool ready
+---
+bool state
+int64 errorcode
+string errormsg
+string name_position

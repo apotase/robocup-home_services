@@ -1,0 +1,5 @@
+string word
+---
+bool state
+int64 errorcode
+string errormsg

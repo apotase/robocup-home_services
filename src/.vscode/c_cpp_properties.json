@@ -1,0 +1,63 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/aokaihua/receptionist/devel/include/**",
+        "/home/aokaihua/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/aokaihua/catkin_ws/src/body_location/include/**",
+        "/home/aokaihua/catkin_ws/src/image_pipeline/depth_image_proc/include/**",
+        "/home/aokaihua/catkin_ws/src/depthimage_to_laserscan-melodic-devel/include/**",
+        "/home/aokaihua/catkin_ws/src/dobot/include/**",
+        "/home/aokaihua/catkin_ws/src/driver_common/driver_base/include/**",
+        "/home/aokaihua/receptionist/src/seu_face_compare/include/**",
+        "/home/aokaihua/catkin_ws/src/face_tracker/include/**",
+        "/home/aokaihua/receptionist/src/seu_get_face/include/**",
+        "/home/aokaihua/catkin_ws/src/image_pipeline/image_proc/include/**",
+        "/home/aokaihua/catkin_ws/src/iai_kinect2/kinect2_bridge/include/**",
+        "/home/aokaihua/catkin_ws/src/iai_kinect2/kinect2_calibration/include/**",
+        "/home/aokaihua/catkin_ws/src/iai_kinect2/kinect2_registration/include/**",
+        "/home/aokaihua/catkin_ws/src/laser_line_extraction-master/include/**",
+        "/home/aokaihua/catkin_ws/src/main_rec/include/**",
+        "/home/aokaihua/catkin_ws/src/main_robo/include/**",
+        "/home/aokaihua/catkin_ws/src/orbbec_camera/include/**",
+        "/home/aokaihua/receptionist/src/robo_face_detection/include/**",
+        "/home/aokaihua/catkin_ws/src/robot_pose_ekf/include/**",
+        "/home/aokaihua/catkin_ws/src/rrt_exploration/include/**",
+        "/home/aokaihua/catkin_ws/src/seu_cv_node/include/**",
+        "/home/aokaihua/catkin_ws/src/seu_face_detect/include/**",
+        "/home/aokaihua/catkin_ws/src/seu_face_recognition/include/**",
+        "/home/aokaihua/catkin_ws/src/seu_fake_cvnode/include/**",
+        "/home/aokaihua/catkin_ws/src/seu_socket_connector/include/**",
+        "/home/aokaihua/catkin_ws/src/seu_speech_recognition/include/**",
+        "/home/aokaihua/catkin_ws/src/seu_speech_synthesis/include/**",
+        "/home/aokaihua/catkin_ws/src/seu_wakeup/include/**",
+        "/home/aokaihua/catkin_ws/src/seu_whatisthis/include/**",
+        "/home/aokaihua/catkin_ws/src/sg/include/**",
+        "/home/aokaihua/catkin_ws/src/image_pipeline/stereo_image_proc/include/**",
+        "/home/aokaihua/catkin_ws/src/test/include/**",
+        "/home/aokaihua/catkin_ws/src/geometry2/tf2/include/**",
+        "/home/aokaihua/catkin_ws/src/geometry2/tf2_bullet/include/**",
+        "/home/aokaihua/catkin_ws/src/geometry2/tf2_eigen/include/**",
+        "/home/aokaihua/catkin_ws/src/geometry2/tf2_geometry_msgs/include/**",
+        "/home/aokaihua/catkin_ws/src/geometry2/tf2_kdl/include/**",
+        "/home/aokaihua/catkin_ws/src/geometry2/tf2_msgs/include/**",
+        "/home/aokaihua/catkin_ws/src/geometry2/tf2_ros/include/**",
+        "/home/aokaihua/catkin_ws/src/geometry2/tf2_sensor_msgs/include/**",
+        "/home/aokaihua/catkin_ws/src/driver_common/timestamp_tools/include/**",
+        "/home/aokaihua/catkin_ws/src/tu/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
