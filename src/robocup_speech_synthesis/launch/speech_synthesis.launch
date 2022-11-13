@@ -1,0 +1,4 @@
+<launch>
+    <node pkg='robocup_speech_synthesis' name='speech_synthesis' type='speech_syn.py' output='screen' >
+    </node>
+</launch>

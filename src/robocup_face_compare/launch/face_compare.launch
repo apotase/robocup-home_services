@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="robocup_face_compare" name="face_compare" type="face_compare.py" output="screen">
+    </node>
+</launch>

@@ -1,4 +1,0 @@
-<launch>
-    <node pkg="robo_get_face" name="get_face" type="get_face.py" output="screen">
-    </node>
-</launch>

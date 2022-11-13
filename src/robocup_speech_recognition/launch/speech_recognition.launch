@@ -1,0 +1,4 @@
+<launch>
+    <node pkg='robocup_speech_recognition' name='speech_recognition' type='speech_recognition_online.py' output='screen' >
+    </node>
+</launch>

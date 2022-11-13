@@ -1,0 +1,4 @@
+<launch>
+    <node pkg='robocup_wakeup_robot' name='wakeup_robot' type='seu_snowboy.py' output='screen' >
+    </node>
+</launch>

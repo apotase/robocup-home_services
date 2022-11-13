@@ -1,4 +1,0 @@
-<launch>
-    <node pkg='wakeup_robot' name='wakeup_robot' type='wakeup_snowboy_main.py' output='screen' >
-    </node>
-</launch>
