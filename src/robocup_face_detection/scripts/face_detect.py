@@ -10,9 +10,10 @@ from sensor_msgs.msg import Image
 # Load the jpg file into a numpy array
 import base64
 import requests
+USR_NAME = 'aokaihua'
 
-detection_image_path = '/home/aokaihua/receptionist/src/robocup_face_detection/src/detection.jpg'
-face_store_path = '/home/aokaihua/receptionist/src/robocup_face_detection/src/face_store/'
+detection_image_path = '/home/'+USR_NAME+'/robocup-home_services/src/robocup_face_detection/src/detection.jpg'
+face_store_path = '/home/'+USR_NAME+'/robocup-home_services/src/robocup_face_detection/src/face_store/'
 ACCESS_TOKEN = '24.ab1ebcd67df27f169b568e6b17abac53.2592000.1670423879.282335-28299517'
 
 def img_encoding(img_path):
@@ -74,7 +75,7 @@ def store_face(PERSON_IMAGE):
             if area > biggest_face: 
                 biggest_face = area
                 face_image = image[top:bottom, left:right]
-        store_path = '/home/aokaihua/receptionist/src/robocup_face_detection/src/face_store/' + PERSON_IMAGE
+        store_path = '/home/'+USR_NAME+'/robocup-home_services/src/robocup_face_detection/src/face_store/' + PERSON_IMAGE
         print(store_path)
         cv2.imwrite(store_path, face_image)
         return 1
@@ -94,7 +95,7 @@ def face_detection_main(req):
 
 def face_detection_srv():
     rospy.init_node('face_detection_server')
-    sub = rospy.Subscriber('/kinect2_down/hd/image_color',Image,callback)
+    # sub = rospy.Subscriber('/kinect2_down/hd/image_color',Image,callback)
     s = rospy.Service('robo_face_detection', face_detection, face_detection_main)
     print("Ready to detect faces.")
     rospy.spin()

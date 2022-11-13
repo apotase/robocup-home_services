@@ -1,7 +1,9 @@
 **功能**：
+<br>
 实现语音合成
 
 **调试示例**:
+<br>
 先运行：
 
     roslaunch robocup_speech_synthesis speech_synthesis.launch
@@ -18,6 +20,7 @@
 3. errormsg(string)
 
 *Reminder*:
+<br>
 使用前最好先查找该pkg是否存在：
 
     rospack find robocup_speech_synthesis

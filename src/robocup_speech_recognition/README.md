@@ -1,14 +1,20 @@
 **功能**：
+<br>
 使用百度在线语音识别 api ，识别语言为英语（若要修改中文则将 speech_recognition_api.py 的 DEV_PID = 1737 修改为1537）
 
 使用前需要下载 SpeechRecognition 库：    
     pip install SpeechRecognition
 
 **调试示例**:
+<br>
 先运行：
+
     roslaunch robocup_speech_recognition speech_recognition.launch
+
 后在终端中输入：
+
     rosservice call /robo_speech_recognition True
+    
 
 **调用该服务后的返回值**：
 1. state(bool)
@@ -17,7 +23,8 @@
 4. errormsg(string)
 
 *Reminder*:
-使用前最好先查找该pkg是否存在：
+1. ACCESS——TOKEN需要每30日更新一次。最近更新于2022.11.12
+2. 使用前最好先查找该pkg是否存在：
 
     rospack find robocup_speech_synthesis
 
@@ -31,3 +38,4 @@
     source devel/setup.bash
 
 另外，调试过程中容易遇到和路径有关的错误，请留意。
+3. 可以使用scripts下的speech_split.py来进行简单的自然语言处理，可以提取动词后的单词，如获取姓名、物品等

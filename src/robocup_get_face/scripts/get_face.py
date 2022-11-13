@@ -5,6 +5,10 @@ import base64
 from robocup_get_face.srv import *
 import json
 import rospy
+
+USR_NAME = 'aokaihua'
+face_path = '/home/'+USR_NAME+'/robocup-home_services/src/robocup_face_detection/src/detection.jpg'
+
 def img_encoding(img_path):
     '''
     图像编码
@@ -17,12 +21,8 @@ def img_encoding(img_path):
 人脸检测与属性分析
 '''
 
-
-
-
-def get_face_main(req, access_token='24.ab1ebcd67df27f169b568e6b17abac53.2592000.1670423879.282335-28299517'):
+def get_face_main(req, img_path = face_path, access_token='24.ab1ebcd67df27f169b568e6b17abac53.2592000.1670423879.282335-28299517'):
     request_url = "https://aip.baidubce.com/rest/2.0/face/v3/detect?access_token=" + access_token
-    img_path = '/home/aokaihua/receptionist/src/robocup_face_detection/src/temp1.jpg'
     body = '"{\"image\": \"' + bytes.decode(img_encoding(img_path)) + '\",\"image_type\": \"BASE64\",\"max_face_num\" : 2, \"face_field\":\"gender,faceshape,age,glassses,mask\"}"'
     body = body.strip('"')
     body = bytes(body, 'utf-8')

@@ -1,0 +1,6 @@
+string name
+---
+bool state
+int64 errorcode
+string facename
+string errormsg

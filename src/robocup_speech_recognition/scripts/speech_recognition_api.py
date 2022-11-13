@@ -28,9 +28,9 @@ else:
 TOKEN_URL = 'http://aip.baidubce.com/oauth/2.0/token'
 ACCESS_TOKEN = '24.b8501ac94448ae2a6375ce57ca3fbf35.2592000.1670843838.282335-28387529'
 # 需要识别的文件
-AUDIO_FILE = 'src/speech_recognition/scripts/wav/recording.wav'  # 只支持 pcm/wav/amr 格式，极速版额外支持m4a 格式
+# AUDIO_FILE = '/home/'+USR_NAME+'/robocup-home_services/src/robocup_speech_recognition/scripts/wav/recording.wav'  # 只支持 pcm/wav/amr 格式，极速版额外支持m4a 格式
 # 文件格式
-FORMAT = AUDIO_FILE[-3:]  # 文件后缀只支持 pcm/wav/amr 格式，极速版额外支持m4a 格式
+FORMAT = 'wav'  # 文件后缀只支持 pcm/wav/amr 格式，极速版额外支持m4a 格式
 CUID = '123456PYTHON'
 # 采样率
 RATE = 16000  # 固定值
@@ -43,7 +43,7 @@ SCOPE = 'audio_voice_assistant_get'  # 有此scope表示有asr能力，没有请
 class DemoError(Exception):
     pass
 
-def recognize_speech(access_token = ACCESS_TOKEN):
+def recognize_speech(AUDIO_FILE, access_token = ACCESS_TOKEN):
     speech_data = []
     with open(AUDIO_FILE, 'rb') as speech_file:
         speech_data = speech_file.read()
